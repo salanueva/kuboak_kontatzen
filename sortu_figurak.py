@@ -189,6 +189,7 @@ def create_random_figure(args):
 
         ax.view_init(35, -125)
         ax.voxels(voxels, facecolors=colors, edgecolor='k')
+        ax.set(xlim=(0, y_len), ylim=(0, x_len), zlim=(0, z_len))
 
         # plt.show()
         fig.tight_layout()
